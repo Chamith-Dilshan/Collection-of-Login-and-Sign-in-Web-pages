@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif, "Poppins";
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 255);
+}
+.login_box{
+    background: rgb(235, 231, 231);
+    padding: 30px;
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+.logo{
+    width: 30px;
+    margin-bottom: 20px;
+}
+.login_box h2{
+    margin-bottom: 20px;
+}
+.login_box button i{
+    margin-right: 20px;
+}
+.login_box button{
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid #999;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login_box button:hover{
+    transform: scale(1.02);
+}
+.login_box hr{
+    border: 0;
+    height: 1px;
+    background: #c2c2c2;
+    margin: 5px;
+}
+.login_box span{
+    display: block;
+    width: 40px;
+    margin: auto;
+    background: rgb(235, 231, 231);
+    font-size: 14px;
+    margin-top: -16px;
+}
+.input_field{
+    width: 100%;
+    background: transparent;
+    border: 1p solid #999;
+    outline: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+::placeholder{
+    font-weight:500;
+    color:#333;
+}
+.remember-me{
+    font-size: 13px;
+    color:#555;
+}
+.buttons{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background: rgb(183, 187, 166);
+    cursor: pointer;
+}
+.buttons:hover{
+    background: rgb(21, 27, 27);
+    color: #fff;
+    transform: scale(1.03);
+}
+.login_box p{
+    text-align: left;
+    font-size: 13px;
+    color:#555;
+    margin: 40px 0 50px;
+}
+.login_box p a{
+    text-decoration: none;
+    color: #359cf0;
+}
+.login_box p a:hover{
+    color:rgb(107, 114, 10);
+}
