@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 <body>
-    <div class="maincontainer">
-        <div class="container1">
-            <h2>Hello</h2>
-        </div>
-        <div class="container2">
-            <img src="" alt="image" class="logo">
-            <h2>Login</h2>
-            <form action="">
-                <input type="text" class="inputs" placeholder="  User name or Email Address">
-                <input type="password" class="inputs" placeholder="  Password">
-                <div id="remember-me">
-                    <input type="checkbox" name="rememberme" id="">
-                    <label for="rememberme">Remember me</label>
+        <div class="row">
+            <!-- coloum 1-->
+            <div class="col-1">
+                <img src="img1.jpg" alt="Image1" class="image1">
+            </div>
+
+            <!-- coloum 2-->
+            <div class="col-2">
+                <div class="container">
+                    <img src="" alt="image" class="logo">
+                    <h2>Login</h2>
+                    <form action="">
+                        <input type="text" class="inputs" placeholder="User name or Email Address">
+                        <input type="password" class="inputs" placeholder="Password">
+                        <div id="remember-me">
+                            <input type="checkbox" name="rememberme" id="rememberme">
+                            <label for="rememberme">Remember me</label>
+                        </div>
+                        <input type="button" value="Login" class="button">
+                        <input type="reset" value="Cancel" class="button">
+                    </form>
+                    <div class="bottom">
+                        <p>Don't have a account? <a href="">sign up</a></p>
+                    </div>
                 </div>
-                <input type="button" value="Login" class="button">
-                <input type="reset" value="Cancel" class="button">
-            </form>
-            <p>Don't have a account? <a href="">sign up</a></p>
-        </div>
-    </div>
+            </div>
+        </div>        
 </body>
 </html>

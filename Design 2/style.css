@@ -6,35 +6,46 @@
 }
 body{
     background: whitesmoke;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
 }
-.maincontainer{
-    display: flex;
-    align-items:end;
-    justify-content:end;
+
+.col-1 {width:65%;}
+.col-2 {width: 35%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+} 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+} 
+
+/* coloumn 1*/
+.image1 {
+    width: 100%;
+    height: 100%;
 }
-.container1{
-    background: #202020;
-    display:flex;
-    max-width:550px;
-    height: 450px;   
-}
-.container2{
+
+/* coloumn 2*/
+.container{
     background: #b5b5b5;
     max-width: 550px;
     width: 90%;
     margin: 0 auto;
     padding: 30px;
-    position: absolute;
-    
     text-align: center;
-    transform: translate(-50%,-50%);
     border-radius: 10px;
+    top:50%;
+    left: 50%;
 }
 .logo{
     width: 30px;
     margin-bottom: 10px;
 }
-.container2 h2{
+.container h2{
     margin-bottom: 10px;
 }
 #remember-me{
@@ -42,13 +53,14 @@ body{
     justify-content: start;
     margin-left:5px;
     gap: 5px;
+    font-size: 13px;
 }
 .inputs{
     width: 100%;
     justify-content: center;
     border-radius: 5px;
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     cursor: pointer;
     background: whitesmoke;
@@ -67,4 +79,30 @@ body{
 .button:hover{
     background: #202020;
     color: white;
+}
+.bottom{
+    text-align: left;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.bottom p a{
+    text-decoration: none;
+    color: rgb(9, 10, 10);
+    font-weight:300;
+}
+.bottom p a:hover{
+    color: whitesmoke;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 700px) {
+    .bottom p a{
+        display: block;
+    }
+    .col-1{
+       display:none; 
+    }
+    .col-2{
+        width: 100%;
+    }
 }

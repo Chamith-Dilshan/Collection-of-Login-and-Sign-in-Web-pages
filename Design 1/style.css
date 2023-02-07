@@ -104,3 +104,19 @@ body{
 .container p a:hover{
     color:rgb(107, 114, 10);
 }
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 80%;
+        overflow: auto;
+        justify-items: center;
+        transform: translate(-50%, -50%);
+        border-radius: 0;
+    }
+}
+@media only screen and (max-width:300px){
+    .container{
+        top: 55%;
+    }
+}
