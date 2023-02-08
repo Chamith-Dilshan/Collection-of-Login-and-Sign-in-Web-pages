@@ -10,13 +10,19 @@ body{
     background-repeat: no-repeat;
 }
 
-.col-1 {width:65%;}
-.col-2 {width: 35%;}
+.col-1 {width:50%;}
+.col-2 {width:50%;}
 
 [class*="col-"] {
     float: left;
-    padding: 10px;
-} 
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+
+.row{
+    transform: translate(0%, 50%);
+}
 .row::after {
     content: "";
     clear: both;
@@ -25,8 +31,10 @@ body{
 
 /* coloumn 1*/
 .image1 {
-    width: 100%;
-    height: 100%;
+    display: block;
+    margin: auto;
+    width: 90%;
+    transform: translate(0%, 50%);
 }
 
 /* coloumn 2*/
@@ -42,7 +50,8 @@ body{
     left: 50%;
 }
 .logo{
-    width: 30px;
+    align-items: center;
+    width: 125px;
     margin-bottom: 10px;
 }
 .container h2{
