@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign in and Login page</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="btn">
+            <button name="login-btn" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none'">Login</button>
+            <button name="signup-btn" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'">Sign up</button> 
+        </div> 
+    </div>
+     <!--login form-->
+    <div class="loginbox" id="id01">
+        <h1>Log in</h1>
+        <form method="post" action="" class="animate" name="frm01">
+            <p>Username</p>
+            <input type="text" placeholder="Enter username" name="uname">
+            <p>Password</p>
+            <input type="password" placeholder="Enter password" name="psw"><br>
+            <input type="submit" value="Login" onclick="validate1()">
+            <input type="reset" value="Cancel" class="canbtn" onclick="document.getElementById('id01').style.display='none'">
+            <a href="#">forgot your password?</a><br>
+            <p class="logp">Don't have an account?<button type="button" class="btn2" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id01').style.display='none'">Signin here.</button></p>
+        </form>
+    </div>
+
+    <!--signup form-->
+    <div class="loginbox" id="id02" style="height:670px">
+        <h1>Sign in</h1>
+        <form method="post" action="" class="animate" name="frm02">
+            <p>Username</p>
+            <input type="text" placeholder="Enter username" name="uname">
+            <p>Email Address</p>
+            <input type="text" placeholder="Enter emailaddress" name="eaddress">
+             <p>Password</p>
+            <input type="password" placeholder="Enter password" name="psw">
+            <p>Confirm Password</p>
+            <input type="password" placeholder="ReEnter password" name="pswr"><br>
+            <input type="submit" value="Signin" onclick="validate2()">
+            <input type="reset" value="Cancel" class="canbtn" onclick="document.getElementById('id02').style.display='none'">
+            <p class="logp">Have an account?<button type="button" class="btn2" onclick="document.getElementById('id01').style.display='block'; document.getElementById('id02').style.display='none' ">Login here.</button></p>
+        </form>
+    </div>
+
+</body>
+</html>
