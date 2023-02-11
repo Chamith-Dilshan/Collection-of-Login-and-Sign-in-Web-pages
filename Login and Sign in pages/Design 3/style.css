@@ -1,5 +1,5 @@
 *{
-    border-radius: border-box;
+    box-sizing: border-box;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 /*top bar*/
 .nav{
     width: 100%;
-    background: #0b72ad;
+    background: #95A598;
     height: 75px;
 }
 .btn{
@@ -15,19 +15,20 @@
     justify-content: center;
 }
 .btn button{
-    width: 20%;
+    font-weight: 700;
+    width: 100px;
     height: 40px;
     margin: 10px;
     padding: 10px;
-    background: #111b20;
-    color: rgb(200, 212, 212);
+    background: #749C77;
+    color: #F6F6F6;
     border-radius: 10px;
-    border: 3px solid #3c5866;
-    box-shadow: 7px 5px 10px #313131;
+    border:none;
+    box-shadow: 7px 5px 10px #425E48;
 }
 .btn button:hover{
-    background: #dee1e2;
-    color: #111b20;
+    background: #F6F6F6;
+    color: #090F08;
     cursor: pointer;
     box-shadow: none;
     transform: scale(1.1);
@@ -40,27 +41,30 @@
     position: fixed;
     z-index: 1;
     overflow: auto;
-  
-    background-color: #2f3640;
-    width: 400px;
+
+    background-color: #090F08;
+    max-width: 550px;
+    border-radius: 10px;
     height: 510px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 10px 30px;
+    width: 80%;
+    margin: 0 auto;
+    padding:30px;
   }
   
   .loginbox h1{
-    font-family: sans-serif;
-    color: White;
+    color: #F6F6F6;
     text-align: center;
+    margin-bottom:50px;
   }
   
-  .loginbox p{
+  .loginbox form p{
     font-family: sans-serif;
-    color: White;
+    color: #F6F6F6;
     font-weight: bold;
+    text-align: left;
   }
   
   .btn2{
@@ -101,11 +105,11 @@
   
   .loginbox input[type="text"], input[type="password"]{
     border:none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #F6F6F6;
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: #F6F6F6;
     font-size:14px;
   }
   
@@ -114,8 +118,8 @@
     border: none;
     outline: none;
     height: 30px;
-    background: green;
-    color: #fff;
+    background: #425E48;
+    color: #F6F6F6;
     font-size: 16px;
     border-radius: 20px;
     width: 100%;
@@ -123,13 +127,13 @@
   
   .loginbox input[type="submit"]:hover{
     cursor:pointer;
-    background: #ffc107;
+    background: #5e4258;
     color: #000;
   }
   
   .loginbox .canbtn:hover{
     cursor:pointer;
-    background: #ffc107;
+    background: #5e4258;
     color: #000;
   }
   
