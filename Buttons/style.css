@@ -35,8 +35,45 @@
     vertical-align: middle;
     align-items: center;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
+
+  /*A section*/
+  [id*="btn-A"]{
+    background: #183153;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    border-style:hidden;
+  }
+  /*button A1*/
+  #btn-A1 :hover{
+    cursor:pointer;
+    color:#B197FC;
+    transform: scale(1.1);
+  }
+
+  /*button A2*/
+  #btn-A2 :hover{
+    cursor:pointer;
+    color:#B197FC;
+    transform:rotate(20deg);
+  }
+
+   /*button A3*/
+   #btn-A3 :active{
+    cursor:pointer;
+    color:#B197FC;
+    transform:scale(1.1);
+  }
+
+ /*button A4*/
+ #btn-A4 :active{
+  cursor:pointer;
+  color:#B197FC;
+  transform:rotate(20deg);
+} 
+
+  /* Responsive layout - makes a two column-layout instead of Three columns */
   @media (max-width: 800px) {
     .column {
       flex: 50%;
