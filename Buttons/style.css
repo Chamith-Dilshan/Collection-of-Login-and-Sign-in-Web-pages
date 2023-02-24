@@ -1,7 +1,7 @@
   *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'poppins','Courier New', Courier, monospace;
     box-sizing: border-box;
   }
 
@@ -72,6 +72,109 @@
   color:#B197FC;
   transform:rotate(20deg);
 } 
+
+/*B section*/
+/*button B1*/
+#btn-B1{
+  background: linear-gradient(to bottom right, #F76B1C, #FAD961);
+  color: #333533;
+  font-weight:1000;
+  box-shadow: 5px 5px 5px 0.1px #d85308;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+/*button B2*/
+#btn-B2{
+  background-color: #f8cd30;
+  color: #333533;
+  font-weight: 1000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px 0px #aa2624;
+}
+
+#btn-B2:hover {
+  background-color: #fad961;
+  box-shadow: 0px -5px 5px 0px #a52725;
+}
+
+/*button B3*/
+#btn-B3{
+  background: linear-gradient(to bottom right, #A9C9FF, #FFBBEC);
+  color: #333533;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px #333533;
+}
+
+#btn-B3:hover {
+  background: linear-gradient(to bottom right, #FFBBEC, #A9C9FF);
+  box-shadow: none;
+}
+
+/*button B4*/
+#btn-B4 {
+  background-color: transparent;
+  color: transparent;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-B4:hover {
+  background-color: #fff;
+  color: #333533;
+  border: 2px solid #333533;
+}
+
+/*button B5*/
+#btn-B5 {
+  background-color: #f44336;
+  color: #333533;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-B5:hover {
+  background-color: #fff;
+  color: #f44336;
+  box-shadow: 0px 0px 10px 0px rgba(244,67,54,0.5);
+}
+
+/*button B6*/
+#btn-B6 {
+  background-color: #6B8F71;
+  color: #333533;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-B6:hover {
+  box-shadow: 0px 0px 20px 0px #fff;
+  background-color: #fff;
+  color: #f44336;
+  text-shadow: 0px 0px 10px #f44336;
+}
 
   /* Responsive layout - makes a two column-layout instead of Three columns */
   @media (max-width: 800px) {
