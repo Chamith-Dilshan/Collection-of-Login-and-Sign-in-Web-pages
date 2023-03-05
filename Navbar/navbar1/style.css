@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background: rgba(234, 232, 123, 0.5);
+    position: sticky;
+    top: 0;
+}
+.container button{
+    background-color: #e3e04f;
+    color: #333533;
+    font-weight: 1000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #c0bf6d;
+}
+.container button a{
+    text-decoration: none;
+    color: #767726;
+} 
+.container button:hover {
+    background-color: #e8e949;
+    box-shadow: 0px -5px 5px 0px #b4b967;
+}
+.container button a:active{
+    color: rgb(154, 161, 56);
+}
+
+.container a img{
+    width: 80px;
+    height: 80px;
+}
+.container a img:hover{
+    cursor: pointer;
+}
+.navbar{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: none;
+    border-radius: 30px;
+}
+.navbar li{
+    float: left;
+}
+.navbar li a{
+    display:block;
+    padding: 14px 16px;
+    color: #767726;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar li a:hover{
+    background-color: #cdad1d;
+}
+.navbar li a:active{
+    background-color: #a04217;
+}
+.navbar li.right{
+    float: right;
+}
+@media screen and (max-width:600px) {
+    .navbar li, .navbar li.right{
+        float:none;
+    }
+
+}
